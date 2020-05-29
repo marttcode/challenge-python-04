@@ -1,16 +1,22 @@
 def div(func):
-    # You have to code here!
-    pass
+    def wrapper(*args):
+        result = func(*args)
+        return '<div>' + result + '</div>'
+    return wrapper
 
 
 def article(func):
-    # You have to code here!
-    pass
+    def wrapper(*args):
+        result = func(*args)
+        return '<article>' + result + '</article>'
+    return wrapper
 
 
 def p(func):
-    # You have to code here!
-    pass
+    def wrapper(*args):
+        result = func(*args)
+        return '<p>' + result + '</p>'
+    return wrapper
 
 
 # Here you must apply the decorators, uncomment this later
